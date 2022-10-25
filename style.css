@@ -7,12 +7,18 @@ body {
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
     /* box-sizing:border-box; */
-    /* width: 340px; */
-    display:grid;
+    width: 250px;
+    height: 250px;
+    display: grid;
+
 
 }
 
-div {
+.grid-div {
     padding: 0 0;
+    /* display: block; */
 
+}
+.grid-div:hover {
+    background-color: red;
 }

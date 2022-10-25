@@ -5,4 +5,6 @@ for (i=0; i<256; i++) {
     div.classList.add('grid-div');
     div.style.cssText = 'border: 1px solid black; height: 20px; width: 20px;';
     mainDiv.appendChild(div);
+    div.addEventListener('mouseover' , () => div.style.backgroundColor = 'red');
 }
+
