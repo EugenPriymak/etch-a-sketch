@@ -1,0 +1,19 @@
+/* . {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} */
+.main {
+    box-sizing:border-box;
+    height: 804px;
+    max-width: 804px;
+    display:flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content:top;
+}
+
+div {
+    padding: 0 0;
+
+}
