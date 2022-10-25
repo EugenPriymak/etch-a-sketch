@@ -1,16 +1,15 @@
-/* . {
+body {
     display:flex;
     justify-content: center;
-    align-items: center;
-} */
+
+}
 .main {
-    box-sizing:border-box;
-    height: 804px;
-    max-width: 804px;
-    display:flex;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    justify-content:top;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    /* box-sizing:border-box; */
+    /* width: 340px; */
+    display:grid;
+
 }
 
 div {
