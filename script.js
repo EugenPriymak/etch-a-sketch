@@ -1,8 +1,11 @@
 let mainDiv = document.querySelector('.main-board');
-let btnInput = document.querySelector('.btn-input');
+let btnSelect = document.querySelector('.select');
 let mainBoard = document.querySelector('.main-board');
-// btnInput.addEventListener('click', createBoard);
+let btnReset = document.querySelector('.reset');
+btnReset.addEventListener('click', reset);
+btnSelect.addEventListener('click', getSize);
 let num;
+
 
 function createBoard(num) {
     console.log("input");
@@ -12,13 +15,25 @@ function createBoard(num) {
     for (i=0; i< numDivs; i++) {
         let div = document.createElement('div');
         div.classList.add('grid-div');
-        div.style.cssText = 'border: .1px solid black';
+        div.style.cssText = 'border: 1px solid black';
         mainDiv.appendChild(div);
         div.addEventListener('mouseover' , () => div.style.backgroundColor = 'red');
     }    
 }
+function getSize() {
+    let input = prompt("What will be the size of the board?");
+    
+    if(input <=100 && input >0) {
+        mainBoard.innerHTML = '';
+        createBoard(input);
 
-createBoard(100);
+    }
+}
+
+function reset() {
+    let divs = document.querySelectorAll('div');
+    divs.forEach((div) => div.style.backgroundColor = "white");  
+}
 
 
 
