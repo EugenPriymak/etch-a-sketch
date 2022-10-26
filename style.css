@@ -1,22 +1,21 @@
-body {
+h1 {
+    text-align: center;
+}
+.main {
     display:flex;
     justify-content: center;
 
 }
-.main {
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-    /* box-sizing:border-box; */
-    width: 250px;
-    height: 250px;
+.main-board {
+    width: 700px;
+    height: 700px;
     display: grid;
-
+    border: 2px solid black;
 
 }
 
 .grid-div {
     padding: 0 0;
-    /* display: block; */
 
 }
 .grid-div:hover {
